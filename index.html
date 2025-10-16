@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000;">
+        <div class="container-fluid gap-4">
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-auto" href="#">Behance</a>
+
+            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+              <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
+                  <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
+                  <button class="btn rounded-pill " style="border: 1px solid #E0EAFF; background-color:#F5F8FF; color:#0057FF;">Log In</button>
+              </div>
+                
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-between  w-100 me-auto align-items-lg-center ">
+                    <div class="d-flex gap-3">
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">Explore</a>
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">Jobs</a>
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">
+                            <div>Recources <img src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
+                        </a>
+                        <div class="d-none d-lg-inline">|</div>
+                        <a href="/hire.html" class="text-decoration-none text-black">
+                            <div class="d-flex d-lg-inline  align-items-center" id="hire">Hire <img
+                                    src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/startfree.html" class="text-decoration-none">
+                            <button class="btn rounded-pill text-white d-none d-lg-inline"
+                            style="background: linear-gradient(to right, #0165FE, #001FAA);"
+                            title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
+                        </a>
+                        <button class="btn rounded-pill d-none d-lg-inline"
+                            style="border: 1px solid #bfd2ff; background-color:#E0EAFF;">Sign In</button>
+                        <button class="btn d-none d-lg-inline">Adobe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="hire1 w-25 text-center bg-primary">
+        <div>
+            <div class="fs-medium">Hiring Dashboard</div>
+            <div class="fs-medium">Freelancers</div>
+            <div class="fs-medium"> Hiring on Behance</div>
+            <div class="fs-medium"> Create New Job</div>
+
+        </div>
+        <hr>
+        <div>
+            <p>Logo Designers</p>
+            <p>Brand Designers</p>
+            <p> Website Designers</p>
+            <p> Illustrators</p>
+            <p> Social Media Designers</p>
+        </div>
+    </div> -->
+
+    <button class="btn  rounded-pill px-4 text-black fw-medium fs-5">
+        Filter
+    </button>
+
+
+
+    <section class="sect-1 d-flex gap-3 p-3 " style="overflow-x: auto; white-space: nowrap;">
+
+
+    </section>
+
+
+    <div class="position-relative pb-4  " >
+        <!-- Scroll buttons -->
+        <button class="btn1 btn btn-light position-absolute top-50 start-0 translate-middle-y fs-2 d-flex"
+            id="scrollLeft">
+            ‹
+        </button>
+        <button class="btn1 btn btn-light position-absolute top-50 end-0 translate-middle-y fs-2 d-flex"
+            id="scrollRight">
+            ›
+        </button>
+
+        <!-- Scrollable container -->
+        <div class="d-flex overflow-auto px-5 gap-3 custom-scroll" id="scrollContainer"
+            style="scroll-behavior: smooth; white-space: nowrap;">
+            <div style="background-image: url(/images/for_you_background.webp);" class="gap-2"><img
+                    src="/icons/iconamoon--star-thin.png" alt="" width="20px">For you</div>
+            <div style="background-image: url(/images/following_background.webp);" class="gap-2"><img
+                    src="/icons/arcticons--heart.png" alt="" width="20px">Following</div>
+            <div style="background-image: url(/images/2299c3196798235.Y3JvcCwxMTkyLDkzMywxMDMsMA.png);" class="gap-2">
+                <img src="/icons/hugeicons--laurel-wreath-01.png" alt="" width="20px">Best of Behance</div>
+            <div style="background-image: url(/images/background4.jpg);">Graphic Design</div>
+            <div style="background-image: url(/images/background5.jpg);">Photography</div>
+            <div style="background-image: url(/images/background6.jpg);">Illustration</div>
+            <div style="background-image: url(/images/background7.jpg);">3D Art</div>
+            <div style="background-image: url(/images/UIUX.jpg);">UI/UX</div>
+            <div style="background-image: url(/images/Background9.jpg);">Motion</div>
+            <div style="background-image: url(/images/background10.jpg);">Architecture</div>
+            <div style="background-image: url(/images/background11.png);">Product Design</div>
+            <div style="background-image: url(/images/background12.jpg);">Fashion</div>
+            <div style="background-image: url(/images/background13.png);">Advertising</div>
+            <div style="background-image: url(/images/background14.jpg);">Fine Arts</div>
+            <div style="background-image: url(/images/background15.jpg);">Crafts</div>
+            <div style="background-image: url(/images/background16.jpg);">Game Design</div>
+            <div style="background-image: url(/images/background17.jpg);">Sound</div>
+            <div style="background-image: url(/images/background18.jpg);">Creative challenges</div>
+            <div style="background-image: url(/images/background19.jpg);">Photoshop</div>
+            <div style="background-image: url(/images/background20.jpg);">Lightroom</div>
+            <div style="background-image: url(/images/background21.jpg);">Illustrator</div>
+            <div style="background-image: url(/images/background22.jpg);">InDesign</div>
+            <div style="background-image: url(images/background23.png);">XD</div>
+            <div style="background-image: url(/images/background24.jpg);">Premiere Pro</div>
+            <div style="background-image: url(/images/baackground25.png);">After Effects</div>
+            <div style="background-image: url(/images/background26.jpg);">Illustrator Draw</div>
+            <div style="background-image: url(/images/background27.jpg);">Photoshop Sketch</div>
+            <div style="background-image: url(/images/background28.jpg);">Photoshop Mix</div>
+            <div style="background-image: url(/images/background29.jpg);">Stock</div>
+            <div style="background-image: url(/images/background30.jpg);">Dimension</div>
+            <div style="background-image: url(/images/background31.jpg);">Capture</div>
+            <div style="background-image: url(/images/background32.jpg);">Substance 3D Designer</div>
+            <div style="background-image: url(/images/background32.jpg);">Substance 3D Painter</div>
+            <div style="background-image: url(/images/background33.png);">Substance 3d Sampler</div>
+            <div style="background-image: url(/images/background33.png);">Substance 3d stager</div>
+            <div style="background-image: url(/images/background34.jpg);">Fresco</div>
+            <div style="background-image: url(/images/background35.jpg);">Aero</div>
+        </div>
+    </div>
+    <section class="d-flex flex-column m-0 p-0  gap-4">
+        <div class="col-12 row d-flex px-3 m-0 card-cont">
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_12_44cac2224208909.Y3JvcCwyNDU0LDE5MjAsMjY3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"> </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p >jibell BI <br>
+                        Minsun Lee</p>
+                       
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55</div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt="" width="20px">433</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_14_751113210807957.Y3JvcCwxMTk2LDkzNSwyLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images); aspect-ratio:1/.8;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_19_af0f7b174765081.Y3JvcCwyNzYxLDIxNjAsNjY5LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+        <div class="col-12 row d-flex px-3 m-0 card-cont">
+              <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_22_65bcfb228460659.Y3JvcCwxNTUyLDEyMTQsMjM4LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_25_9e3f69235078807.Y3JvcCwxMDMyLDgwNywxNzYsMjM.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images/imgi_26_3fdd71232382779.Y3JvcCw4NDMsNjU5LDI3OSwxMTI.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_28_a3f804200952477.Y3JvcCwxODk5LDE0ODUsMTAzNCw3Mjg.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+        <div class="col-12 row d-flex px-3 m-0  card-cont">
+                   <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_30_9d1213181368785.Y3JvcCwyODc2LDIyNTAsNTYyLDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_31_067277229197245.Y3JvcCwyMDQ5LDE2MDIsMCw0NzY.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images/imgi_32_d2cd2b235645027.Y3JvcCwyNDAwLDE4NzcsMCww.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_33_6d5d13198320467.Y3JvcCwyOTMxLDIyOTMsNjk2LDEzMA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+        <div class="col-12 row d-flex px-3 m-0  card-cont">
+                        <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_34_352713235206287.Y3JvcCwzMTk2LDI0OTksMzg3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_35_710536226452697.Y3JvcCwxMzk4LDEwOTQsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images/imgi_36_608129231862045.Y3JvcCw2MDQ0LDQ3MjcsNDQ4LDM0NA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_38_b092e7211275141.Y3JvcCwzNTc4LDI3OTksMzEwLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+        <div class="col-12 row d-flex px-3 m-0  card-cont">
+                        <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_39_4bb8c8212416659.Y3JvcCwzMjU3LDI1NDgsMjI1LDQ4.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_40_42a483221426319.Y3JvcCwyNzgyLDIxNzYsMCwxMw.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images/imgi_42_186d8d220711195.Y3JvcCw0NjAyLDM2MDAsMzQsMA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_44_5866d5235253687.Y3JvcCwxNDAwLDEwOTUsMCwxOTA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+        <div class="col-12 row  d-flex px-3 m-0 card-cont">
+                   <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_45_a9946c192266085.Y3JvcCwxNDcyLDExNTEsMTQ1LDk4.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_46_49818e235070599.Y3JvcCwxMzk5LDEwOTUsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div  style="background-image: url(/images/imgi_47_e8a08e234910131.Y3JvcCwyNzEwLDIxMjAsMTY3LDQ2.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+                <div style="background-image: url(/images/imgi_49_8c3786234254587.Y3JvcCwxMzM1LDEwNDQsMzMzLDI2.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     
+    <section class="" style="background-color: #191919;" style="height: 90vh;">
+        <div class=" d-flex flex-column text-white pt-5 container-fluid">
+            <div class="d-flex  justify-content-evenly mt-3 mb-4">
+                <div class="">
+                    <h1>Behance</h1>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Built For Creatives</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Try Behance Pro</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Find Inspiration</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Get Hired</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Creative Assets</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Freelance Services</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Find Talent</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Post a Job</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Graphic Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Photographers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Video Editors</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Web Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Illustrators</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold">Behance</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> About Behance</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Adobe Portfolio</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Download the App</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Blog</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Careers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Help Center</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Contact Us</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Login</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Social</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Instagram</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Twitter</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Pinterest</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Facebook</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> LinkedIn</div>
+                    </a>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="d-flex justify-content-evenly">
+                <div>Adobe</div>
+                <div><small>© 2025 Adobe Inc. All rights reserved.</small></div>
+                <div class="d-flex gap-4">
+                    <div class="fw-medium">English</div>
+                    <a href="" class="text-decoration-none text-white fw-medium"> TOU</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Privacy</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Community</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Cookie preferences</a>
+                    <a href="" class="text-decoration-none text-white"><small> Do not sell or share my personal
+                            information</small></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <script>
+        const scrollContainer = document.getElementById("scrollContainer");
+        const scrollLeft = document.getElementById("scrollLeft");
+        const scrollRight = document.getElementById("scrollRight");
+
+        scrollLeft.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: -200, behavior: "smooth" });
+        });
+
+        scrollRight.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: 200, behavior: "smooth" });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

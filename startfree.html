@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behance pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <style>
+        @media (max-width:1024px) {
+            .card-cont1 {
+                flex-direction: column; 
+            }
+
+            .card1 {
+                display: flex;
+                flex-direction: row !important;
+                padding: 0 !important;
+                height: fit-content;
+                align-items: center ;
+            }
+
+            .subCard {
+                height: 100px;
+                margin: 0 !; 
+                align-items: flex-start;
+                padding: 0 !important;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-sticky top-0 bg-white " style="z-index: 1000;">
+        <div class="container-fluid gap-4">
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-auto" href="#">Behance</a>
+
+            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+                <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
+                    <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
+                    <button class="btn rounded-pill "
+                        style="border: 1px solid #E0EAFF; background-color:#F5F8FF; color:#0057FF;">Log In</button>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-between  w-100 me-auto align-items-lg-center   ">
+                    <div class="d-flex gap-3">
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">Explore</a>
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">Jobs</a>
+                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">
+                            <div>Recources <img src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
+                        </a>
+                        <div class="d-none d-lg-inline">|</div>
+                        <a href="" class="text-decoration-none text-black">
+                            <div class="d-flex d-lg-inline  align-items-center" id="hire">Hire <img
+                                    src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
+                        </a>
+
+                    </div>
+                    <div class="m-0 p-0">
+                        <button class="btn rounded-pill text-white d-none d-lg-inline"
+                            style="background: linear-gradient(to right, #0165FE, #001FAA);"
+                            title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
+                        <button class="btn rounded-pill d-none d-lg-inline"
+                            style="border: 1px solid #bfd2ff; background-color:#E0EAFF;">Sign In</button>
+                        <button class="btn d-none d-lg-inline">Adobe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section
+        style="background-image: url(/images/imgi_103_pro_marketing_banner_2x.webp); height:90vh; background-size:cover; background-position:center;"
+        class="d-flex align-items-center">
+
+        <div class="mx-auto w-75 px-5">
+            <h1 class="text-white text-center" style="font-size: 60px;">Accelerate Your Creative Career with Behance Pro
+            </h1>
+            <p class="text-white text-center fs-4">Take your career further with tools designed to showcase your
+                creativity, reach more people, and earn more—all in one place.</p>
+            <div class="mx-auto d-flex justify-content-center gap-2">
+                <button class="btn rounded-pill bg-light fw-medium  ">Start Free Trial</button>
+                <button class="btn rounded-pill text-white fw-medium border-secondary">Compare Plans</button>
+            </div>
+        </div>
+    </section>
+    <section style=" background:radial-gradient(at top left, #F5F8FF, #FFFFFF)">
+        <div class="w-100 mb-5">
+            <p class="text-end">Art by <a href="" class="text-dark ms-auto text-decoration-none">Sabyasachi Koley</a>
+            </p>
+        </div>
+        <div>
+            <p class=" fw-medium text-center" style="font-size: 70px;">Why upgrade to Pro?</p>
+        </div>
+
+        <div class="d-flex container-fluid  mx-auto gap-5  text-center card-cont1">
+            <div class="rounded-4 pt-5 d-flex flex-column card1 pb-5"
+                style="border: 1px solid #0057ff;  background-color:#FFFFFF;">
+                <div class="d-flex justify-content-center align-items-center rounded-4 mx-auto"
+                    style="height: 80px; width:80px;border:1px solid #0057ff ; background-color:#FFFFFF;"><img
+                        src="/icons/ant-design--rise-outlined (1).png" alt="" width="60px"></div>
+                <div class="subCard d-flex flex-column mb-5 pb-3">
+                    <p>Expand Your Reach</p>
+                    <p> Reach more clients and collaborators and get your work seen by the right people at the right
+                        time.
+                    </p>
+                    <div>Learn More</div>
+                </div>
+            </div>
+            <div class="rounded-4 pt-5 d-flex flex-column card1 pb-5"
+                style="border:1px,solid #028901;  background-color:#FFFFFF;">
+                <div class="d-flex justify-content-center align-items-center rounded-4 mx-auto"
+                    style="height: 80px; width:80px; border:1px,solid #028901; background-color:#FFFFFF;">
+                    <img src="/icons/streamline-cyber--money-bag-1.png" alt="" width="60px">
+                </div>
+
+                <div class="subCard d-flex flex-column  mb-5 pb-3">
+                    <p>Grow Your Earnings</p>
+                    <p>Get exclusive access to premium freelance jobs from top clients—with no platform fees.</p>
+                    <div> Learn More</div>
+                </div>
+            </div>
+            <div class="rounded-4 pt-5 d-flex flex-column card1 pb-5"
+                style="border:1px solid #b125c0;  background-color:#FFFFFF;">
+                <div style="height: 80px; width:80px; border:1px solid #b125c0; background-color:#FFFFFF;"
+                    class="d-flex justify-content-center align-items-center rounded-4 mx-auto"><img
+                        src="/icons/solar--star-shine-outline.png" alt="" width="60px"></div>
+                <div class="subCard d-flex flex-column  mb-5 pb-3">
+                    <p> Stand Out from the Crowd</p>
+                    <p> Showcase your unique brand with customizations that match who you are as a creative.</p>
+                    <div> Learn More</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+            <div class="btn rounded-pill btn-dark px-4">Start Free Trial</div>
+            <div class="btn rounded-pill btn-outline-secondary text-black px-4">Compare Plans</div>
+        </div>
+    </section>
+
+    <section style=" background:linear-gradient(to bottom, #f2f7ff 90%, #ffffff)">
+        <div class="container d-flex flex-column align-items-center gap-4 pt-5">
+            <div class="d-flex justify-content-center align-items-center rounded-4 mx-auto"
+                style="height: 80px; width:80px;border:1px solid #0057ff ; background-color:#FFFFFF;"><img
+                    src="/icons/ant-design--rise-outlined (1).png" alt="" width="60px">
+            </div>
+            <p class="text-center fs-5 fw-semibold" style="color: #0057FF;">Expand Your Reach</p>
+            <p style="font-size: 60px;" class="fw-bold text-center">Get your work seen by more clients <br> and
+                collaborators</p>
+            <button class="btn btn-dark rounded-pill px-4">Start Free Trial</button>
+        </div>
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_1_pro_boost_projects.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Boost your projects</P>
+                <P class="fs-5 "> Highlight your best work and make sure it reaches the right eyes at the right time.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_2_pro_traffic_sources.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> See who's viewed your profile and projects</P>
+                <P class="fs-5 ">Get detailed insights on who's engaging with your work and how they found you, so you
+                    can follow up with potential clients and collaborators.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5 " style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_3_pro_scheduled_publish.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Get noticed</P>
+                <P class="fs-5 ">Schedule your projects to publish at a set day/time to get maximum engagement with your
+                    audience.</P>
+            </div>
+        </div>
+        <div style="background:linear-gradient(to right, #0186fd, #001fab); height:180px;"
+            class="w-75 mx-auto rounded-4 mt-5 d-flex justify-content-space-between align-items-center px-5">
+            <div class="d-flex gap-3 w-75">
+                <p class="text-white fw-bold" style="font-size:70px ;">45%</p>
+                <div style="width: 1px; height:100px; background-color:#67a3fe;" class="me-3"></div>
+                <div class="w-50">
+                    <p style="color: #67a3fe;" class="fs-5">Pro members see their views and engagement increase by an
+                        average of</p>
+                    <p class="text-white fs-5">45% in their first month</p>
+                </div>
+            </div>
+            <div class="">
+                <button class="btn rounded-pill btn-light px-4 fw-medium">Start Free Trial</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="mt-5" style="background: linear-gradient(to bottom, #f2f9f2 90%, #ffffff); height:280vh;">
+        <div class="container d-flex flex-column align-items-center gap-4 pt-5">
+            <div class="d-flex justify-content-center align-items-center rounded-4 mx-auto"
+                style="height: 80px; width:80px; border:1px,solid #028901; background-color:#FFFFFF;"><img
+                    src="/icons/streamline-cyber--money-bag-1.png" alt="" width="60px">
+            </div>
+            <p class="text-center fs-5 fw-semibold" style="color: #028901;">Earn More</p>
+            <p style="font-size: 60px;" class="fw-bold text-center">Get access to more jobs and earn <br> more with each
+                job</p>
+            <button class="btn btn-dark rounded-pill px-4">Start Free Trial</button>
+        </div>
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_4_pro_pricing_chart.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Confidently price your projects</P>
+                <P class="fs-5 "> Expert tools designed to guide you on pricing projects as competitively as possible.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_5_pro_exclusive_freelance_jobs.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Access exclusive freelance jobs</P>
+                <P class="fs-5 ">Receive weekly recommendations on freelance jobs that are a best fit for you.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5 " style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images//imgi_6_pro_zero_fees.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> 0% Platform fees</P>
+                <P class="fs-5 ">Other marketplaces will take up to 50% of what you earn. With Behance Pro, not only
+                    will you pay no platform fees. Neither will your clients.</P>
+            </div>
+        </div>
+        <div style="background:linear-gradient(to right, #2da629, #0e700a); height:180px;"
+            class="w-75 mx-auto rounded-4 mt-5 d-flex justify-content-space-between align-items-center px-5">
+            <div class="d-flex gap-3 w-75 align-items-center">
+                <p class="text-white fw-bold" style="font-size:70px ;">4x</p>
+                <div style="width: 1px; height:100px; background-color:#79c477;" class="me-3"></div>
+                <div class="w-50">
+                    <p style="color: #c6e6c5;" class="fs-4 fw-medium">Pro members on average see <span
+                            class="text-white">4x the amount of job inquiries</span> and leads after subscribing to
+                        Behance Pro</p>
+
+                </div>
+            </div>
+            <div class="">
+                <button class="btn rounded-pill btn-light px-4 fw-medium">Start Free Trial</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="mt-5" style="background: linear-gradient(to bottom, #fbf4fb 90%, #ffffff); height:340vh;">
+        <div class="container d-flex flex-column align-items-center gap-4 pt-5">
+            <div style="height: 80px; width:80px; border:1px solid #b125c0; background-color:#FFFFFF;"
+                class="d-flex justify-content-center align-items-center rounded-4 mx-auto"><img
+                    src="/icons/solar--star-shine-outline.png" alt="" width="60px">
+            </div>
+            <p class="text-center fs-5 fw-semibold" style="color: #b125c0;">Stand Out from the Crowd</p>
+            <p style="font-size: 60px;" class="fw-bold text-center">Personalize your profile to <br> showcase your
+                unique brand</p>
+            <button class="btn btn-dark rounded-pill px-4">Start Free Trial</button>
+        </div>
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_7_pro_go_dark.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5">Go dark</P>
+                <P class="fs-5 "> Give your profile a sleek, professional look with light and dark mode options to match
+                    your style.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5" style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_8_pro_customize_profile.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Flexible organization</P>
+                <P class="fs-5 ">Organize your projects and services with custom sections, making it easy for clients to
+                    navigate and explore your work.
+                </P>
+            </div>
+        </div>
+
+        <div class="d-flex container mx-auto mt-5 " style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_9_pro_drive_engagement.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5"> Drive more engagement</P>
+                <P class="fs-5 ">Show people the best way to engage with you by adding a custom button to your profile
+                    and projects.</P>
+            </div>
+        </div>
+        <div class="d-flex container mx-auto mt-5 " style="height: 350px;">
+            <div class="w-50 d-flex justify-content-center align-items-center">
+                <img src="/images/imgi_10_pro_custom_website.webp" alt="" class="w-100 position-relative"
+                    style="border-top-left-radius:16px ; border-bottom-left-radius:16px; height:350px;">
+                <img src="/icons/icon-park--play.png" alt="" width="100px" class="position-absolute">
+            </div>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-start ps-3"
+                style="background-color: white; border-top-right-radius:18px; border-bottom-right-radius:18px;">
+                <P class="fw-medium fs-5">Your own custom website</P>
+                <P class="fs-5 ">Your Pro membership includes full access to Adobe Portfolio. Build up to 5
+                    fully-branded websites with free hosting and custom domains.</P>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+
+    </section>
+
+
+
+    <div class="text-center" style="background-color: white;">
+        <span class="fw-medium">Upgrade to Behance Pro today:</span> Get advanced analytics, a custom portfolio website,
+        and more features to grow your creative career.
+        <a href="" class="text-decoration-none fw-medium"> &nbsp; Start your 7 day free trial</a>
+    </div>
+    <section class="" style="background-color: #191919;" style="height: 90vh;">
+        <div class=" d-flex flex-column text-white pt-5 container-fluid">
+            <div class="d-flex  justify-content-evenly mt-3 mb-4">
+                <div class="">
+                    <h1>Behance</h1>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Built For Creatives</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Try Behance Pro</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Find Inspiration</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Get Hired</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Creative Assets</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Freelance Services</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Find Talent</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Post a Job</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Graphic Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Photographers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Video Editors</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Web Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Illustrators</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold">Behance</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> About Behance</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Adobe Portfolio</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Download the App</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Blog</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Careers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Help Center</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Contact Us</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Login</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Social</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Instagram</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Twitter</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Pinterest</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Facebook</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> LinkedIn</div>
+                    </a>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="d-flex justify-content-evenly">
+                <div>Adobe</div>
+                <div><small>© 2025 Adobe Inc. All rights reserved.</small></div>
+                <div class="d-flex gap-4">
+                    <div class="fw-medium">English</div>
+                    <a href="" class="text-decoration-none text-white fw-medium"> TOU</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Privacy</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Community</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Cookie preferences</a>
+                    <a href="" class="text-decoration-none text-white"><small> Do not sell or share my personal
+                            information</small></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
