@@ -36,16 +36,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-sticky top-0 bg-white " style="z-index: 1000;">
+       <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000; background-color:white;">
         <div class="container-fluid gap-4">
             <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand me-auto" href="#">Behance</a>
+            <a class="navbar-brand me-auto" href="#">
+                <img src="/icons/download (1).svg" alt="" width="40px" class="d-block d-lg-none">
+                <img src="/icons/download.svg" alt="" width="100px" class="d-none d-lg-inline">
+            </a>
 
-            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+            <div class="offcanvas offcanvas-start w-75" id="navbarSupportedContent">
                 <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
                     <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
                     <button class="btn rounded-pill "
@@ -53,9 +56,9 @@
                 </div>
 
                 <div
-                    class="d-flex flex-column flex-lg-row justify-content-between  w-100 me-auto align-items-lg-center   ">
-                    <div class="d-flex gap-3">
-                        <a href="" class="text-decoration-none text-black d-block d-lg-inline">Explore</a>
+                    class="d-flex flex-column flex-lg-row justify-content-between  w-100 me-auto align-items-lg-center ">
+                    <div class="d-flex flex-column flex-lg-row gap-3 ps-3">
+                        <a href="/index.html" class="text-decoration-none text-black d-block d-lg-inline">Explore</a>
                         <a href="" class="text-decoration-none text-black d-block d-lg-inline">Jobs</a>
                         <a href="" class="text-decoration-none text-black d-block d-lg-inline">
                             <div>Recources <img src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
@@ -67,7 +70,7 @@
                         </a>
 
                     </div>
-                    <div class="m-0 p-0">
+                    <div class="">
                         <button class="btn rounded-pill text-white d-none d-lg-inline"
                             style="background: linear-gradient(to right, #0165FE, #001FAA);"
                             title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
@@ -78,6 +81,7 @@
                 </div>
             </div>
         </div>
+
     </nav>
 
     <section
