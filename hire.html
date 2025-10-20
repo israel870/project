@@ -36,6 +36,15 @@
 
         }
 
+        .preFoot a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .preFoot a:hover {
+            text-decoration: underline;
+        }
+
         @keyframes grow {
             0% {
                 transform: scale(1);
@@ -45,6 +54,27 @@
                 transform: scale(1.08);
             }
 
+        }
+
+        @media (max-width:1024px) {
+            .left-img {
+                display: none;
+            }
+
+            .whyHire {
+                justify-content: center !important;
+            }
+        }
+
+        .contact-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .rev:hover {
+            border: 2px solid #0057ff;
         }
     </style>
 </head>
@@ -63,7 +93,7 @@
             </button>
             <a class="navbar-brand me-auto" href="#">Behance</a>
 
-            <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+            <div class="offcanvas offcanvas-start w-75" id="navbarSupportedContent">
                 <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
                     <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
                     <button class="btn rounded-pill "
@@ -171,10 +201,10 @@
 
     </section>
 
-    <section class="pt-5" style="background-color: #f6f9ff; height:100vh;">
-        <div class="d-flex justify-content-between container mt-5"> 
+    <section class="pt-5" style="background-color: #f6f9ff; ;">
+        <div class="d-flex justify-content-between container mt-5 whyHire">
             <div>
-                <p class="fw-medium" style="font-size: 60px;">Why hire on Behance?</p>
+                <p class="fw-medium" style="font-size: 4vw;">Why hire on Behance?</p>
                 <p class="fs-5">Hiring freelance talent on Behance is seamless and secure.</p>
                 <div>
                     <div></div>
@@ -184,21 +214,21 @@
                     </div>
                 </div>
                 <div>
-                      <div></div>
+                    <div></div>
                     <div class="lh-1">
                         <p class="fw-bold fs-5">All the right tools in one place</p>
                         <p>Start conversations, share files, and join video calls with candidates</p>
                     </div>
                 </div>
                 <div>
-                      <div></div>
+                    <div></div>
                     <div class="lh-1">
                         <p class="fw-bold fs-5">Secure payments</p>
                         <p>Pay seamlessly and securely with a debit or credit card on Behance</p>
                     </div>
                 </div>
                 <div>
-                      <div></div>
+                    <div></div>
                     <div class="lh-1">
                         <p class="fw-bold fs-5">No platform fee with Behance Pro</p>
                         <p>Platform fees are waived for freelancers with Behance Pro</p>
@@ -209,16 +239,297 @@
                     <button class="btn btn-light rounded-pill border-secondary ">Browse Freelancers</button>
                 </div>
             </div>
-            <div>
+            <div class="left-img">
                 <img src="/images/imgi_9_hire-landing-why.1x.webp" alt="">
             </div>
         </div>
     </section>
+    <section>
+        <div class="w-75 mx-auto">
+            <p class="fw-medium fs-4" style="color: #0057ff;">Our Freelancers</p>
+            <p class="fs-1 fw-semibold">Hire top freelancers hand-selected <br>by the Behance team.</p>
+        </div>
+        <div class="d-flex jusify-content-between">
+            <div class="d-flex gap-3 mx-auto">
+                <a href="" class="text-decoration-none text-dark">All</a>
+                <a href="" class="text-decoration-none text-dark">Logo Designers</a>
+                <a href="" class="text-decoration-none text-dark">Brand Designers</a>
+                <a href="" class="text-decoration-none text-dark">Illustrators</a>
+                <a href="" class="text-decoration-none text-dark">UI/UX Designers</a>
+            </div>
+            <div class="d-flex align-items center">
+                <button class="btn1 btn btn-light  translate-middle-y fs-2 d-flex align-items-center" id="scrollLeft"
+                    style="width: 50px; height: 50px;">
+                    ‹
+                </button>
+                <button class="btn1 btn btn-light translate-middle-y fs-2 d-flex align-items-center" id="scrollRight"
+                    style="width: 50px; height: 50px;">
+                    ›
+                </button>
+            </div>
+        </div>
+        <div></div>
+
+        <div class="d-flex justify-content-center align-items-center gap-3">
+            <button class="btn rounded-pill btn-primary px-4 fw-medium ">Get Started</button>
+            <button class="btn rounded-pill btn-light px-4 fw-medium ">Browse Freelancers</button>
+        </div>
+    </section>
 
 
+    <section class="pt-5 d-flex flex-column align-items-center pb-5"
+        style="background:linear-gradient(to bottom , #f5f8ff 80%, #ffffff);">
+        <p class="text-center mt-4 text-primary fs-5 fw-semibold">How it works</p>
+        <p class="text-center fw-medium lh-1" style="font-size:5vw;">Hiring on Behance <br> is easy & secure.</p>
+        <div class="d-flex gap-3 justify-content-center ">
+            <div class="rounded-4 px-4 rev" style="width: 30%; background-color:white; ">
+                <img src="" alt="">
+                <p>1. Review recommendations</p>
+                <p>Share your requirements with recommended <br>freelancers, and review their proposals.</p>
+            </div>
+            <div class="rounded-4 px-4 rev" style="width: 30%; background-color:white; ">
+                <img src="" alt="">
+                <p>2. Hire & collaborate</p>
+                <p>Start conversations, share files, and join <br>video calls to discuss project details.</p>
+            </div>
+            <div class="rounded-4 px-4 rev" style="width: 30%; background-color:white; ">
+                <img src="" alt="">
+                <p>3. Pay securely on platform</p>
+                <p>Pay seamlessly with a debit or credit card on <br>Behance.</p>
+            </div>
+        </div>
+        <img src="/images/imgi_88_hire-landing-how-1.1x.webp" alt="" class="w-75  mt-5">
+        <button class="btn btn-primary rounded-pill px-5 mb-5">Get Started</button>
+        <div style="height: 1px; background-color:#bfd2ff;" class="w-75 mt-5 mb-5"></div>
+    </section>
+
+    <section>
+        <div>
+            <div class="d-flex justify-content-between container-fluid px-5">
+                <div class="lh-1">
+                    <p class="text-primary  fw-medium" style="font-size: 23px;">Success Stories</p>
+                    <p class="fw-semibold" style="font-size:60px ;">See what clients are saying.</p>
+                    <p class="" style="font-size:20px;">Learn firsthand why 98% of clients recommend their Behance
+                        freelancer.</p>
+                </div>
+                <div class="d-flex align-items center">
+                    <button class="btn1 btn btn-light  translate-middle-y fs-2 d-flex align-items-center"
+                        id="scrollLeft" style="width: 50px; height: 50px;">
+                        ‹
+                    </button>
+                    <button class="btn1 btn btn-light translate-middle-y fs-2 d-flex align-items-center"
+                        id="scrollRight" style="width: 50px; height: 50px;">
+                        ›
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex px-5 gap-5 ">
+                <div class="d-flex flex-column justify-content-between px-4 py-4 rounded-4 fw-medium"
+                    style="height:300px; width: 400px; border:1px solid grey; font-size:18px;">
+                    <p>Absolutely great Designer to work with. Prompt response, professional approach and beautiful
+                        designs. A DELIGHT TO WORK WITH!</p>
+                    <div>
+                        <p>Nadia Fernandez</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-between px-4 py-4 rounded-4 fw-medium"
+                    style="height:300px; width: 400px; border:1px solid grey; font-size:18px;">
+                    <p>Amazing work as usual! This is my second time working with Enrico and it wont be the last. He
+                        created some awesome design assets for a project that helped me elevate the entire brand
+                        identity in a professional and timely manor.</p>
+                    <div>
+                        <p>Ulysses Design Co</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-between px-4 py-4 rounded-4 fw-medium"
+                    style="height:300px; width: 400px; border:1px solid grey; font-size:18px;">
+                    <p>I had a fantastic experience working with Lindsey. Her professionalism, expertise, and
+                        communication skills made the project smooth and successful. Highly recommended! </p>
+                    <div>
+                        <p>Kira Koroknai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-3 justify-content-center mt-4 mb-5">
+                <button class="btn rounded-pill px-5 btn-primary">Get Started</button>
+                <button class="btn rounded-pill px-5 btn-light ">Browse Freelancers</button>
+            </div>
+
+            <div class="px-xl-5 py-xl-5 mb-5">
+                <div class="mt-5 w-xl-100 d-flex flex-column align-items-center py-5 rounded-5"
+                    style="border: 1px solid grey;">
+                    <p class=" lh-1 fw-bold" style="font-size: 60px;">Hiring on behalf <br>of your company?</p>
+                    <p class="fs-5 text-center">We’ll help you find the perfect freelancer with hand-picked <br>
+                        recommendations.</p>
+                    <button class="btn btn-primary fs-5 fw-medium rounded-pill mt-5 mb-5">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5"
+        style=" background-image:url(/images/imgi_247_hire-bg.webp); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgb(0, 0, 0, 0.6); background-blend-mode: overlay; ">
+        <div>
+            <p class="text-white text-center fs-5 mt-5">Hire confidently</p>
+            <p class="text-white text-center lh-1 fw-bold" style="font-size: 60px;">Tap into the world’s <br> largest
+                creative community.</p>
+
+            <div class="d-flex justify-content-center gap-5 text-white mt-5">
+                <div class="text-center py-5 rounded-5 px-4"
+                    style="box-sizing:border-box; width:400px; background-color: rgb(255, 255, 255, 0.2); background-blend-mode: overlay; backdrop-filter: blur(10px); ">
+                    <p class="fs-3"> 50M+</p>
+                    <p> Over 50 million members in the Behance community</p>
+                </div>
+                <div class="text-center py-5 rounded-5 px-4"
+                    style="box-sizing:border-box; width:400px; background-color: rgb(255, 255, 255, 0.2); background-blend-mode: overlay; backdrop-filter: blur(10px); ">
+                    <p class="fs-3">Billions</p>
+                    <p>Creative work gets seen billions of times every year on Behance</p>
+                </div>
+                <div class="text-center py-5 rounded-5 px-4"
+                    style="box-sizing:border-box; width:400px; background-color: rgb(255, 255, 255, 0.2); background-blend-mode: overlay; backdrop-filter: blur(10px); ">
+                    <p class="fs-3">2006</p>
+                    <p>Founded in 2006, Behance has been a trusted network for over 15 years</p>
+                </div>
+            </div>
+            <div class="d-flex gap-3 justify-content-center mt-5">
+                <button class="btn rounded-pill btn-light px-4 fw-medium">Get Started</button>
+                <button class="btn rounded-pill border-secondary text-light px-4">Browse Freelancers</button>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 px-5" style="background-color: #191919; height:100vh; ">
+        <div class="col-12 row pt-5">
+            <div class="col-lg-3 col col-md-4 col-sm-6 d-flex flex-column text-white px-3 preFoot">
+                <p class="fs-4 fw-medium lh-sm">Browse more designers available for hire</p>
+                <a href="" class="fs-5">Graphic Designers</a>
+                <a href="" class="fs-5">Brand Designers</a>
+                <a href="" class="fs-5">UI/UX Designers</a>
+                <a href="" class="fs-5"> Illustrators</a>
+                <a href="" class="fs-5"> Logo Designers</a>
+                <a href="" class="fs-5">Interaction Designers</a>
+                <a href="" class="fs-5"> Art Directors</a>
+                <a href="" class="fs-5"> Photographers</a>
+                <a href="" class="fs-5"> Web Designers</a>
+                <a href="" class="fs-5"> Industrial Designers</a>
+                <a href="" class="fs-5"> Architects</a>
+                <a href="" class="fs-5"> Motion Graphic Designers</a>
+                <a href="" class="fs-5"> Fashion Artists</a>
+                <a href="" class="fs-5"> 3D Artists</a>
+            </div>
+            <div class="col-lg-3 col col-md-4 col-sm-6 d-flex flex-column text-white px-3 preFoot">
+                <p class="fs-4 fw-medium lh-sm">Browse top creative services</p>
+                <a href="" class="fs-5">Logo Design</a>
+                <a href="" class="fs-5"> Branding Services</a>
+                <a href="" class="fs-5"> Social Media Design</a>
+                <a href="" class="fs-5"> Website Design</a>
+                <a href="" class="fs-5"> Illustrations</a>
+                <a href="" class="fs-5"> Packaging Design</a>
+                <a href="" class="fs-5"> Landing Page Design</a>
+                <a href="" class="fs-5"> UI/UX Design</a>
+                <a href="" class="fs-5"> Architecture & Interior Design</a>
+                <a href="" class="fs-5"> Portraits</a>
+                <a href="" class="fs-5"> Comics & Character Design</a>
+                <a href="" class="fs-5"> Graphics for Streamers</a>
+                <a href="" class="fs-5"> Mentorship</a>
+                <a href="" class="fs-5"> Sound Design</a>
+                <a href="" class="fs-5"> Invitation Design</a>
+            </div>
+            <div class="col-lg-3 col col-md-4 col-sm-6 d-flex flex-column text-white px-3 preFoot">
+                <p class="fs-4 fw-medium lh-sm">Hiring Freelancers on Behance</p>
+                <a href="" class="fs-5">How to Hire Freelance Artists on Behance</a>
+                <a href="" class="fs-5">New Way To Hire Freelancers on Behance: Book a Service</a>
+                <a href="" class="fs-5">Hire Creative Talent for your Next Freelance Project from Behance</a>
+                <a href="" class="fs-5">Help Center: Hiring on Behance</a>
+            </div>
+            <div
+                class="col-lg-3 col col-md-4 col-sm-6 d-flex flex-lg-column flex-sm-column flex-md-row text-white px-3 preFoot gap-5">
+                <div style="background-color: #252525; height:250px;" class="py-4 px-5 rounded-5 d-flex flex-column align-items-center">
+                    <p class="text-center fs-5 lh-sm"> Looking for more designers to hire? Search all available full time and freelance designers now</p>
+                    <button class="btn btn-light rounded-pill px-3 ">Start searching now</button>
+                </div>
+                <div style="background-color: #252525; height:250px;" class="py-4 px-5 rounded-5 d-flex flex-column align-items-center">
+                    <p class="text-center fs-5 lh-sm">Hiring? We’ll help you find a freelancer: get matched with hand-picked recommendations.</p>
+                    <button class="btn btn-light rounded-pill px-3 ">Contact us now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="py-3 d-flex justify-content-center " >
+   <span class="fw-medium"> Upgrade to Behance Pro today :&nbsp; </span> Get advanced analytics, a custom portfolio website, and more features to grow your creative career. &nbsp;
+<a href="" class="text-decoration-none fw-medium text-primary"> Start your 7 day free trial</a>
+</div>
 
 
-
+    
+    <section class="" style="background-color: #191919;" style="height: 90vh;">
+        <div class=" d-flex flex-column text-white pt-5 container-fluid">
+            <div class="d-flex  justify-content-evenly mt-3 mb-4">
+                <div class="">
+                    <h1>Behance</h1>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Built For Creatives</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Try Behance Pro</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Find Inspiration</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Get Hired</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Creative Assets</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">Sell Freelance Services</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Find Talent</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Post a Job</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Graphic Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Photographers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Video Editors</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Web Designers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Illustrators</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold">Behance</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> About Behance</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Adobe Portfolio</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Download the App</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Blog</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Careers</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Help Center</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Contact Us</a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5"> Login</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="fs-5 fw-bold"> Social</p>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Instagram</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Twitter</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Pinterest</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> Facebook</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-white lh-lg fs-5">
+                        <div> LinkedIn</div>
+                    </a>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="d-flex justify-content-evenly">
+                <div>Adobe</div>
+                <div><small>© 2025 Adobe Inc. All rights reserved.</small></div>
+                <div class="d-flex gap-4">
+                    <div class="fw-medium">English</div>
+                    <a href="" class="text-decoration-none text-white fw-medium"> TOU</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Privacy</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Community</a>
+                    <a href="" class="text-decoration-none text-white fw-medium"> Cookie preferences</a>
+                    <a href="" class="text-decoration-none text-white"><small> Do not sell or share my personal
+                            information</small></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

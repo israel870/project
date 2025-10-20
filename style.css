@@ -38,4 +38,13 @@
             justify-content: center;
             align-items: center;
         }
-       
+       .hoverEffect{
+        display: none !important;
+       }
+       .cardDiv:hover .hoverEffect{
+        display: flex !important;
+       }
+       .cardImage:hover{
+        background-color: rgba(0, 0, 0, .3);
+        background-blend-mode: overlay;
+       }

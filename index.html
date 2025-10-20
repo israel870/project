@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000;">
+    <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000; background-color:#ffffff;">
         <div class="container-fluid gap-4">
             <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,11 +23,12 @@
             <a class="navbar-brand me-auto" href="#">Behance</a>
 
             <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
-              <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
-                  <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
-                  <button class="btn rounded-pill " style="border: 1px solid #E0EAFF; background-color:#F5F8FF; color:#0057FF;">Log In</button>
-              </div>
-                
+                <div class="d-flex justify-content-between   d-lg-none align-items-center container mt-3 mb-5">
+                    <button type="button" class="btn-close me-auto   " data-bs-dismiss="offcanvas"></button>
+                    <button class="btn rounded-pill "
+                        style="border: 1px solid #E0EAFF; background-color:#F5F8FF; color:#0057FF;">Log In</button>
+                </div>
+
                 <div
                     class="d-flex flex-column flex-lg-row justify-content-between  w-100 me-auto align-items-lg-center ">
                     <div class="d-flex gap-3">
@@ -37,16 +38,16 @@
                             <div>Recources <img src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
                         </a>
                         <div class="d-none d-lg-inline">|</div>
-                        <a href="/hire.html" class="text-decoration-none text-black">
+                        <a href="/hire.html" class="text-decoration-none text-black" target="_blank">
                             <div class="d-flex d-lg-inline  align-items-center" id="hire">Hire <img
                                     src="/icons/ep--arrow-down-bold.png" alt="" width="15px"></div>
                         </a>
                     </div>
                     <div class="">
-                        <a href="/startfree.html" class="text-decoration-none">
+                        <a href="/startfree.html" class="text-decoration-none" target="_blank">
                             <button class="btn rounded-pill text-white d-none d-lg-inline"
-                            style="background: linear-gradient(to right, #0165FE, #001FAA);"
-                            title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
+                                style="background: linear-gradient(to right, #0165FE, #001FAA);"
+                                title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
                         </a>
                         <button class="btn rounded-pill d-none d-lg-inline"
                             style="border: 1px solid #bfd2ff; background-color:#E0EAFF;">Sign In</button>
@@ -86,7 +87,7 @@
     </section>
 
 
-    <div class="position-relative pb-4  " >
+    <div class="position-relative pb-4  ">
         <!-- Scroll buttons -->
         <button class="btn1 btn btn-light position-absolute top-50 start-0 translate-middle-y fs-2 d-flex"
             id="scrollLeft">
@@ -105,7 +106,8 @@
             <div style="background-image: url(/images/following_background.webp);" class="gap-2"><img
                     src="/icons/arcticons--heart.png" alt="" width="20px">Following</div>
             <div style="background-image: url(/images/2299c3196798235.Y3JvcCwxMTkyLDkzMywxMDMsMA.png);" class="gap-2">
-                <img src="/icons/hugeicons--laurel-wreath-01.png" alt="" width="20px">Best of Behance</div>
+                <img src="/icons/hugeicons--laurel-wreath-01.png" alt="" width="20px">Best of Behance
+            </div>
             <div style="background-image: url(/images/background4.jpg);">Graphic Design</div>
             <div style="background-image: url(/images/background5.jpg);">Photography</div>
             <div style="background-image: url(/images/background6.jpg);">Illustration</div>
@@ -144,101 +146,715 @@
     </div>
     <section class="d-flex flex-column m-0 p-0  gap-4">
         <div class="col-12 row d-flex px-3 m-0 card-cont">
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_12_44cac2224208909.Y3JvcCwyNDU0LDE5MjAsMjY3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"> </div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_12_44cac2224208909.Y3JvcCwyNDU0LDE5MjAsMjY3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+                            <img src="/images/imgi_15_indesign.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p >jibell BI <br>
-                        Minsun Lee</p>
-                       
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55</div>
-                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt="" width="20px">433</div>
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_14_751113210807957.Y3JvcCwxMTk2LDkzNSwyLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_14_751113210807957.Y3JvcCwxMTk2LDkzNSwyLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_13_network.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="lh-1">
+                        <p> Evolut-ion</p>
+                        <p> Ruben Daems</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
             <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images); aspect-ratio:1/.8;"></div>
+                <div class="d-flex flex-column align-items-center justify-content-center"
+                    style="background-image: url(/images/imgi_103_pro_marketing_banner_2x.webp); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <p class="text-white fs-5 text-center fw-medium lh-sm">Boost your best work <br> where it matters
+                        most.</p>
+                    <button class="btn rounded-pill px-3 btn-light fw-medium">Start Free Trial</button>
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div> -->
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_19_af0f7b174765081.Y3JvcCwyNzYxLDIxNjAsNjY5LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_19_af0f7b174765081.Y3JvcCwyNzYxLDIxNjAsNjY5LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+                            <img src="/images/imgi_29_illustrator.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 row d-flex px-3 m-0 card-cont">
-              <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_22_65bcfb228460659.Y3JvcCwxNTUyLDEyMTQsMjM4LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_22_65bcfb228460659.Y3JvcCwxNTUyLDEyMTQsMjM4LDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_43_stock.png" alt="">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_25_9e3f69235078807.Y3JvcCwxMDMyLDgwNywxNzYsMjM.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_25_9e3f69235078807.Y3JvcCwxMDMyLDgwNywxNzYsMjM.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_27_3d-art.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images/imgi_26_3fdd71232382779.Y3JvcCw4NDMsNjU5LDI3OSwxMTI.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_26_3fdd71232382779.Y3JvcCw4NDMsNjU5LDI3OSwxMTI.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_23_illustration.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_28_a3f804200952477.Y3JvcCwxODk5LDE0ODUsMTAzNCw3Mjg.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_28_a3f804200952477.Y3JvcCwxODk5LDE0ODUsMTAzNCw3Mjg.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_13_network.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 row d-flex px-3 m-0  card-cont">
-                   <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_30_9d1213181368785.Y3JvcCwyODc2LDIyNTAsNTYyLDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_30_9d1213181368785.Y3JvcCwyODc2LDIyNTAsNTYyLDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_20_motion.png" alt="">
+                            <img src="/images/imgi_21_after-effects.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_31_067277229197245.Y3JvcCwyMDQ5LDE2MDIsMCw0NzY.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_31_067277229197245.Y3JvcCwyMDQ5LDE2MDIsMCw0NzY.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+                            <img src="/images/imgi_29_illustrator.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images/imgi_32_d2cd2b235645027.Y3JvcCwyNDAwLDE4NzcsMCww.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_32_d2cd2b235645027.Y3JvcCwyNDAwLDE4NzcsMCww.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_23_illustration.png" alt="">
+                            <img src="/images/imgi_24_photoshop.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_33_6d5d13198320467.Y3JvcCwyOTMxLDIyOTMsNjk2LDEzMA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_33_6d5d13198320467.Y3JvcCwyOTMxLDIyOTMsNjk2LDEzMA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_15_indesign.png" alt="">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 row d-flex px-3 m-0  card-cont">
-                        <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_34_352713235206287.Y3JvcCwzMTk2LDI0OTksMzg3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_34_352713235206287.Y3JvcCwzMTk2LDI0OTksMzg3LDA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_20_motion.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_35_710536226452697.Y3JvcCwxMzk4LDEwOTQsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_35_710536226452697.Y3JvcCwxMzk4LDEwOTQsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images/imgi_36_608129231862045.Y3JvcCw2MDQ0LDQ3MjcsNDQ4LDM0NA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_36_608129231862045.Y3JvcCw2MDQ0LDQ3MjcsNDQ4LDM0NA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+                            <img src="/images/imgi_15_indesign.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_38_b092e7211275141.Y3JvcCwzNTc4LDI3OTksMzEwLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_38_b092e7211275141.Y3JvcCwzNTc4LDI3OTksMzEwLDA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_13_network.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 row d-flex px-3 m-0  card-cont">
-                        <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_39_4bb8c8212416659.Y3JvcCwzMjU3LDI1NDgsMjI1LDQ4.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_39_4bb8c8212416659.Y3JvcCwzMjU3LDI1NDgsMjI1LDQ4.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+                            <img src="/images/imgi_29_illustrator.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_40_42a483221426319.Y3JvcCwyNzgyLDIxNzYsMCwxMw.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_40_42a483221426319.Y3JvcCwyNzgyLDIxNzYsMCwxMw.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_27_3d-art.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images/imgi_42_186d8d220711195.Y3JvcCw0NjAyLDM2MDAsMzQsMA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_42_186d8d220711195.Y3JvcCw0NjAyLDM2MDAsMzQsMA.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_23_illustration.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_44_5866d5235253687.Y3JvcCwxNDAwLDEwOTUsMCwxOTA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_44_5866d5235253687.Y3JvcCwxNDAwLDEwOTUsMCwxOTA.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_37_photography.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 row  d-flex px-3 m-0 card-cont">
-                   <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_45_a9946c192266085.Y3JvcCwxNDcyLDExNTEsMTQ1LDk4.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3  cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_45_a9946c192266085.Y3JvcCwxNDcyLDExNTEsMTQ1LDk4.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_23_illustration.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6  col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_46_49818e235070599.Y3JvcCwxMzk5LDEwOTUsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12 col-md-6  col-lg-4 col-xl-3  cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_46_49818e235070599.Y3JvcCwxMzk5LDEwOTUsMCww.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_15_indesign.png" alt="">
+                            <img src="/images/imgi_16_graphic-design.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div  style="background-image: url(/images/imgi_47_e8a08e234910131.Y3JvcCwyNzEwLDIxMjAsMTY3LDQ2.png); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3  cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_47_e8a08e234910131.Y3JvcCwyNzEwLDIxMjAsMTY3LDQ2.png); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_41_fashion.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
-                <div style="background-image: url(/images/imgi_49_8c3786234254587.Y3JvcCwxMzM1LDEwNDQsMzMzLDI2.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;"></div>
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 cardDiv">
+                <div class="cardImage"
+                    style="background-image: url(/images/imgi_49_8c3786234254587.Y3JvcCwxMzM1LDEwNDQsMzMzLDI2.jpg); aspect-ratio:1/.8; background-size:cover; background-position:center;">
+                    <div class="d-flex justify-content-between align-items-start hoverEffect">
+                        <div class="pt-2 ps-2 d-flex  align-items-center ">
+                            <button class="btn btn-dark rounded-pill d-flex align-items-center gap-2"><img
+                                    src="/icons/ph--folder-open-fill.png" alt="" width="20px"> Save</button>
+                        </div>
+                        <div class="d-flex pe-2 gap-2">
+                            <img src="/images/imgi_48_product-design.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                        <p>jibell BI <br>
+                            Minsun Lee</p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        </div>
+                        <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
+                                width="20px">433</div>
+                    </div>
+                </div>
             </div>
         </div>
 
+    </section>
+
+    <section>
+        <div class="d-flex flex-column  justify-content-center w-25 mx-auto gap-3">
+            <p class="fs-5 text-center fw-medium">Sign in to search the world's largest creative network</p>
+            <button  class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="" alt="">
+                <p>Continue with Google</p>
+            </button>
+            <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="" alt="">
+                <p>Continue with Facebook</p>
+            </button>
+            <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="" alt="">
+                <p>Continue with Apple</p>
+            </button>
+            <a href="" class="text-center text-decoration-none text-primary">View more</a>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+                <div style="height: 1px; background-color:#D5D5D5" class="w-25"></div>
+                <p class="pt-3">Or</p>
+                <div style="height: 1px; background-color:#D5D5D5" class="w-25"></div>
+            </div>
+            <p>Continue with email</p>
+            <label for="">Email address</label>
+            <input type="email">
+            <button class="btn btn-dark rounded-pill w-25 ms-auto">Continue</button>
+
+        </div>
     </section>
 
 
@@ -260,9 +876,7 @@
 
 
 
-
-
-<!--     
+        
     <section class="" style="background-color: #191919;" style="height: 90vh;">
         <div class=" d-flex flex-column text-white pt-5 container-fluid">
             <div class="d-flex  justify-content-evenly mt-3 mb-4">
@@ -331,7 +945,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <script>
