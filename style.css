@@ -1,50 +1,65 @@
      .hire1 {
-            display: none;
-        }
+         display: none;
+     }
 
-        #hire:hover.hire1 {
-            display: flex !important;
-        }
-        #scrollContainer div:hover{
-            background-color: rgba(7, 48, 102, 1);
-        }
-        #scrollContainer div{
-            width: fit-content;
-            padding: 3px 30px;
-            height: 50px;
-            flex-shrink: 0;
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
-            background-color: rgb(0, 0, 0, 0.7);
-            color:white;
-            display: flex;
-            justify-content: center;
-            align-items:center ;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-        .custom-scroll::-webkit-scrollbar {
-            display: none;
-        }
-        .custom-scroll{
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-        .btn1{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            justify-content: center;
-            align-items: center;
-        }
-       .hoverEffect{
-        display: none !important;
-       }
-       .cardDiv:hover .hoverEffect{
-        display: flex !important;
-       }
-       .cardImage:hover{
-        background-color: rgba(0, 0, 0, .3);
-        background-blend-mode: overlay;
-       }
+     #hire:hover.hire1 {
+         display: flex !important;
+     }
+
+     #scrollContainer div:hover {
+         background-color: rgba(7, 48, 102, 1);
+     }
+
+     #scrollContainer div {
+         width: fit-content;
+         padding: 3px 30px;
+         height: 50px;
+         flex-shrink: 0;
+         background-size: cover;
+         background-position: center;
+         background-blend-mode: overlay;
+         background-color: rgb(0, 0, 0, 0.7);
+         color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         border-radius: 8px;
+     }
+
+     .custom-scroll::-webkit-scrollbar {
+         display: none;
+     }
+
+     .custom-scroll {
+         -ms-overflow-style: none;
+         /* IE and Edge */
+         scrollbar-width: none;
+         /* Firefox */
+     }
+
+     .btn1 {
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .hoverEffect {
+         display: none !important;
+     }
+
+     .cardDiv:hover .hoverEffect {
+         display: flex !important;
+     }
+
+     .cardImage:hover {
+         background-color: rgba(0, 0, 0, .3);
+         background-blend-mode: overlay;
+     }
+
+     .navBut:hover {
+         border: 1px solid #E8E8E8;
+         background-color: #FFFFFF;
+     }

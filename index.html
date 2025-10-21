@@ -80,8 +80,8 @@
         </div>
     </div> -->
 
-    <div class="d-flex justify-content-between px-2">
-        <button class="btn  rounded-pill px-4 text-black fw-medium  btn-outline-light border-2">
+    <div class="d-flex justify-content-between px-2 ">
+        <button class="btn  rounded-pill px-lg-4 text-black fw-medium  btn-outline-light border-2">
             <img src="/icons/mage--filter.png" alt="" width="25px">
             Filter
         </button>
@@ -90,17 +90,17 @@
             <form class="d-flex" role="search">
                 <input class="form-control me-2 rounded-pill ps-5 py-2" type="search" placeholder="Search Behance..." aria-label="Search" style="background-color: #F9F9F9;"/>
             </form>
-            <div class="d-flex justify-content-between position-absolute top-0 w-100 ps-2  py-1 align-items-center">
+            <div class="d-flex justify-content-between position-absolute top-0 w-100 ps-2 pe-4 pt-2  py-1 align-items-center">
                 <div><img src="/icons/material-symbols-light--search.png" alt="" width="25px"></div>
-                <div>
+                <div class="d-none d-lg-block">
                     <button class="btn rounded-pill py-0" style="border: 1px solid #E8E8E8; background-color:#FFFFFF;">Projects</button>
-                    <button class="btn">People</button>
-                    <button class="btn">Assets</button>
-                    <button class="btn">Images</button>
+                    <button class="btn rounded-pill py-0 navBut">People</button>
+                    <button class="btn rounded-pill py-0 navBut">Assets</button>
+                    <button class="btn rounded-pill py-0 navBut">Images</button>
                 </div>
             </div>
         </div>
-        <button class="btn">Recommended</button>
+        <button class="btn d-flex align-items-center gap-2"><img src="/icons/hugeicons--menu-08.png" alt="" width="20px"><p class="d-none d-lg-inline">Recommended</p></button>
     </div>
 
 
@@ -223,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12  col-md-6 col-lg-4 col-xl-3 ">
+            <div class="col-12  col-md-6 col-lg-4 col-xl-3 pb-5 pb-lg-0 ">
                 <div class="d-flex flex-column align-items-center justify-content-center"
                     style="background-image: url(/images/imgi_103_pro_marketing_banner_2x.webp); aspect-ratio:1/.8; background-size:cover; background-position:center;">
                     <p class="text-white fs-5 text-center fw-medium lh-sm">Boost your best work <br> where it matters
@@ -851,22 +851,22 @@
     </section>
 
     <section>
-        <div class="d-flex flex-column  justify-content-center w-25 mx-auto gap-3">
+        <div class="d-flex flex-column  justify-content-center w-75 w-lg-25 mx-auto gap-3">
             <p class="fs-5 text-center fw-medium">Sign in to search the world's largest creative network</p>
             <button
-                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-center">
                 <img src="/icons/material-icon-theme--google.png" alt="" width="20px">
-                <p>Continue with Google</p>
+                <p class="">Continue with Google</p>
             </button>
             <button
-                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-center">
                 <img src="/icons/logos--facebook (1).png" alt="" width="20px">
-                <p>Continue with Facebook</p>
+                <p class="">Continue with Facebook</p>
             </button>
             <button
-                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-center">
                 <img src="/icons/devicon--apple.png" alt="" width="20px">
-                <p>Continue with Apple</p>
+                <p class="">Continue with Apple</p>
             </button>
             <a href="" class="text-center text-decoration-none text-primary">View more</a>
             <div class="d-flex align-items-center justify-content-center gap-2">
@@ -913,9 +913,10 @@
 
 
 
-    <section class="" style="background-color: #191919;" style="height: 90vh;">
-        <div class=" d-flex flex-column text-white pt-5 container-fluid">
-            <div class="d-flex  justify-content-evenly mt-3 mb-4">
+    <footer class="" style="background-color: #191919;">
+        <div class=" text-white text-center">
+            <div
+                class="d-flex  justify-content-lg-evenly mt-3 mb-4 flex-column text-center text-lg-start flex-lg-row gap-5">
                 <div class="">
                     <h1>Behance</h1>
                 </div>
@@ -967,10 +968,10 @@
                 </div>
             </div>
             <hr class="mt-5 mb-4">
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly  ">
                 <div>Adobe</div>
                 <div><small>© 2025 Adobe Inc. All rights reserved.</small></div>
-                <div class="d-flex gap-4">
+                <div class="d-flex gap-4 flex-column flex-lg-row">
                     <div class="fw-medium">English</div>
                     <a href="" class="text-decoration-none text-white fw-medium"> TOU</a>
                     <a href="" class="text-decoration-none text-white fw-medium"> Privacy</a>
@@ -981,7 +982,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
 
     <script>
