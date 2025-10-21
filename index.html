@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000; background-color:white;">
+    <nav class="navbar navbar-expand-lg position-sticky top-0" style="z-index: 1000; background-color:white;">
         <div class="container-fluid gap-4">
             <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,9 +48,10 @@
 
                     </div>
                     <div class="">
-                        <button class="btn rounded-pill text-white d-none d-lg-inline"
-                            style="background: linear-gradient(to right, #0165FE, #001FAA);"
-                            title="Try Behance Pro with a 7-day free trial">Start Free Trial</button>
+                        <a href="/startfree.html" class="text-decoration-none"> <button
+                                class="btn rounded-pill text-white d-none d-lg-inline"
+                                style="background: linear-gradient(to right, #0165FE, #001FAA);"
+                                title="Try Behance Pro with a 7-day free trial">Start Free Trial</button></a>
                         <button class="btn rounded-pill d-none d-lg-inline"
                             style="border: 1px solid #bfd2ff; background-color:#E0EAFF;">Sign In</button>
                         <button class="btn d-none d-lg-inline">Adobe</button>
@@ -60,6 +61,7 @@
         </div>
 
     </nav>
+    <hr class="mt-4">
     <!-- <div class="hire1 w-25 text-center bg-primary">
         <div>
             <div class="fs-medium">Hiring Dashboard</div>
@@ -78,15 +80,31 @@
         </div>
     </div> -->
 
-    <button class="btn  rounded-pill px-4 text-black fw-medium fs-5">
-        Filter
-    </button>
+    <div class="d-flex justify-content-between px-2">
+        <button class="btn  rounded-pill px-4 text-black fw-medium  btn-outline-light border-2">
+            <img src="/icons/mage--filter.png" alt="" width="25px">
+            Filter
+        </button>
 
+        <div class="w-75 position-relative">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 rounded-pill ps-5 py-2" type="search" placeholder="Search Behance..." aria-label="Search" style="background-color: #F9F9F9;"/>
+            </form>
+            <div class="d-flex justify-content-between position-absolute top-0 w-100 ps-2  py-1 align-items-center">
+                <div><img src="/icons/material-symbols-light--search.png" alt="" width="25px"></div>
+                <div>
+                    <button class="btn rounded-pill py-0" style="border: 1px solid #E8E8E8; background-color:#FFFFFF;">Projects</button>
+                    <button class="btn">People</button>
+                    <button class="btn">Assets</button>
+                    <button class="btn">Images</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn">Recommended</button>
+    </div>
 
 
     <section class="sect-1 d-flex gap-3 p-3 " style="overflow-x: auto; white-space: nowrap;">
-
-
     </section>
 
 
@@ -242,15 +260,15 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p>jibell BI <br>
-                            Minsun Lee</p>
+                        <p>A Trip to Infinity <br>
+                            Multiple Owners</p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">717
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">8.7k</div>
                     </div>
                 </div>
             </div>
@@ -273,15 +291,16 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p>jibell BI <br>
+                        <p>Illustrations for a <br>
+                            children's book <br>
                             Minsun Lee</p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">99
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">876</div>
                     </div>
                 </div>
             </div>
@@ -301,15 +320,15 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p>jibell BI <br>
-                            Minsun Lee</p>
+                        <p>The 15-Minute Office<br>
+                            Anna Uvizheva</p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">100
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">298</div>
                     </div>
                 </div>
             </div>
@@ -330,14 +349,14 @@
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
                         <p>jibell BI <br>
-                            Minsun Lee</p>
+                            SEO YEON JAE </p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">188
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">1.9k</div>
                     </div>
                 </div>
             </div>
@@ -362,10 +381,10 @@
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">2.1k
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">19.2k</div>
                     </div>
                 </div>
             </div>
@@ -387,15 +406,15 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p>jibell BI <br>
-                            Minsun Lee</p>
+                        <p>DIMANCHE studio <br>
+                            Multiple Owners</p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">183
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">850</div>
                     </div>
                 </div>
             </div>
@@ -415,15 +434,15 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-start">
                     <div class="">
-                        <p>jibell BI <br>
-                            Minsun Lee</p>
+                        <p>Dizengof/99 <br>
+                            Multiple Owners</p>
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">166
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">998</div>
                     </div>
                 </div>
             </div>
@@ -448,10 +467,10 @@
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">81
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">391</div>
                     </div>
                 </div>
             </div>
@@ -477,10 +496,10 @@
 
                     </div>
                     <div class="d-flex gap-2">
-                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">55
+                        <div class="d-flex align-items-center"><img src="/icons/mdi--like.png" alt="" width="15px">262
                         </div>
                         <div class="d-flex align-items-center"><img src="/icons/lets-icons--view-fill.png" alt=""
-                                width="20px">433</div>
+                                width="20px">1.9k</div>
                     </div>
                 </div>
             </div>
@@ -834,16 +853,19 @@
     <section>
         <div class="d-flex flex-column  justify-content-center w-25 mx-auto gap-3">
             <p class="fs-5 text-center fw-medium">Sign in to search the world's largest creative network</p>
-            <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
-                <img src="" alt="">
+            <button
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="/icons/material-icon-theme--google.png" alt="" width="20px">
                 <p>Continue with Google</p>
             </button>
-            <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
-                <img src="" alt="">
+            <button
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="/icons/logos--facebook (1).png" alt="" width="20px">
                 <p>Continue with Facebook</p>
             </button>
-            <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
-                <img src="" alt="">
+            <button
+                class="btn border-light border-3 rounded-pill d-flex align-items-center gap-2 justify-content-centerx">
+                <img src="/icons/devicon--apple.png" alt="" width="20px">
                 <p>Continue with Apple</p>
             </button>
             <a href="" class="text-center text-decoration-none text-primary">View more</a>
@@ -852,10 +874,21 @@
                 <p class="pt-3">Or</p>
                 <div style="height: 1px; background-color:#D5D5D5" class="w-25"></div>
             </div>
-            <p>Continue with email</p>
-            <label for="">Email address</label>
-            <input type="email">
-            <button class="btn btn-dark rounded-pill w-25 ms-auto">Continue</button>
+            <div class="W-100 lh-1">
+                <p class="fw-semibold fs-5">Continue with email</p>
+                <div class="d-flex flex-column gap-2 mb-3">
+
+                    <label for="">
+                        <small>Email address</small>
+                    </label>
+                    <input type="email">
+                    <button class="btn btn-dark rounded-pill px-4 py-1 ms-auto">Continue</button>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-end w-100">
+            </div>
+
 
         </div>
     </section>
